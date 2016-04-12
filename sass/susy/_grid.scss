@@ -1,13 +1,13 @@
 // Requirements
 // ============
 
-@import "susy";
+@import "../../bower_components/susy/sass/susy";
 
 $susy: (
   columns: 6,
   gutters: 1/4,
   container: auto,
-  debug: (image: hide, color: rgba(163, 46, 25, .25), output: background, toggle: top right),
+  debug: (image: show, color: rgba(163, 46, 25, .25), output: background, toggle: top right),
   use-custom: ( rem: true )
 );
 
