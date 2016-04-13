@@ -1,0 +1,15 @@
+@include susy-breakpoint(64em, 12) {
+  .header-logo {
+	@include span(4 of 12);
+  }
+  
+  .site-branding {
+    @include span(8 of 12 last);
+    font-size: 2em;
+    font-weight: 700;
+    a {
+      text-decoration: none;
+    }
+  }
+  
+}
