@@ -1,0 +1,38 @@
+.slideout-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 256px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+}
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+}
+
+.slideout-open {
+  overflow: hidden;
+  body, .slideout-panel {
+    overflow: hidden;
+  }
+  .slideout-menu {
+    display: block;
+  }
+}
+
+.toggle-button {
+  margin: 0 0 0 .5em;
+}
+
+#mobile-menu {
+  list-style: none;
+  margin: 3em 0;
+  font-size: .75em;
+}

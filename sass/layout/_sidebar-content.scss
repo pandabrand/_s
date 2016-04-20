@@ -1,20 +1,53 @@
 .content-area {
-	float: right;
-	margin: 0 0 0 (-$size__site-sidebar);
-	width: $size__site-main;
 }
 
-.site-main {
-	margin: 0 0 0 $size__site-sidebar;
+@include susy-breakpoint(20em, 6) {
+  .site-main {
+	@include full;
+	padding: gutter();
+  }
+
+  .widget-area {
+	@include full;
+	padding: gutter();
+	a {
+	  text-decoration: none;
+	}
+  }
 }
 
-.site-content .widget-area {
-	float: left;
-	overflow: hidden;
-	width: $size__site-sidebar;
+@include susy-breakpoint(48em, 9) {
+  .site-main {
+    clear: none;
+	padding: 0;
+	@include span(5 of 9 last);
+  }
+
+  .widget-area {
+    clear: none;
+	@include span(4 of 9);
+  }
 }
+
+@include susy-breakpoint(60em, 12) {
+  .site-main {
+	@include span(8 of 12 last);
+  }
+
+  .widget-area {
+	@include span(4 of 12);
+  }
+}
+
+
 
 .site-footer {
 	clear: both;
-	width: $size__site-main;
+	@include full;
+	background-color: $color__background-hr;
+	color: $color__background-pre;
+	.site-info {
+	  font-size: .6em;
+	  text-align: center;
+	}
 }

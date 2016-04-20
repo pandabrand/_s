@@ -15,9 +15,11 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', '_pandapress' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', '_pandapress' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', '_pandapress' ), '_pandapress', '<a href="http://automattic.com/" rel="designer">Automattic</a>' ); ?>
+		  <p>Midwest Technical Assistance Center &copy;<?php echo date('Y'); ?></p>
+
+		  <p>2444 W. 16th St. Chicago, IL 60608 - 312/942-1444 phone and 312/942-1599 fax</p>
+
+		  <p>Funded with support from the U.S. Department of Labor</p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

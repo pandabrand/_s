@@ -4,6 +4,8 @@
  */
 function mtac_custom_scripts() {
   wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-2.2.1.min.js', array(), '2.2.1', true);
+  wp_enqueue_script( 'slideout', 'https://cdnjs.cloudflare.com/ajax/libs/slideout/0.1.11/slideout.min.js', array(), '0.1.11', true);
+  wp_enqueue_script( 'app-js', get_template_directory_uri() . '/assets/js/app.min.js', array(), '20160413', true);
   wp_enqueue_style( 'mtac-fonts', mtac_fonts_url(), array(), null );
 }
 
