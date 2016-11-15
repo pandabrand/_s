@@ -1,0 +1,29 @@
+.aside-menu {
+  margin: 2em 0;
+  list-style: none;
+  padding: 0;
+  font-family: $work-sans;
+  font-weight: 400;
+  .current_page_item {
+    background-color: $dark-green;
+    padding: 5px;
+    border-radius: 2px;
+    font-weight: 500;
+    a {
+      color: $whitish;
+      &:visited {
+        color: $whitish;
+      }
+    }
+  }
+  ul {
+    list-style: none;
+    margin-left: .75em;
+  }
+}
+
+@media (max-width: 768px) {
+  .aside-menu {
+    margin: 2em 2em 1em;
+  }
+}

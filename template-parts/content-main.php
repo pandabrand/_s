@@ -12,9 +12,15 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('mtac-article'); ?>>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php if(get_field('full_width_image')): ?>
+			<?php $image = get_field('full_width_image'); ?>
+			<div class="full-width-image-header">
+				<img src="<?php echo $image['url'];?>" alt="<?php echo $image['title']; ?>" />
+			</div>
+		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div class="entry-content<?php echo (have_rows('libraries') ? ' entry-content-with-sidebar' : '' ); ?>">
 		<?php
 			the_content();
 
@@ -41,6 +47,11 @@
 		<?php endif; ?>
 	</div><!-- .entry-content -->
 
+	<?php if (have_rows('libraries')): ?>
+		<div class="entry-content-sidebar">
+			<?php get_template_part('template-parts/mtac', 'libraries'); ?>
+		</div>
+	<?php endif; ?>
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">
 			<?php

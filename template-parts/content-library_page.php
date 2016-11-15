@@ -39,22 +39,6 @@
 				'after'  => '</div>',
 			) );
 		?>
-		<?php if( have_rows('information_sections') ): ?>
-			<div id="accordion" class="mtac-accordion">
-				<?php while( have_rows('information_sections' ) ): the_row();
-					$title = get_sub_field('title');
-					$content = get_sub_field('content');
-				?>
-					<?php if($title): ?>
-						<h3><?php echo $title; ?></h3>
-					<?php endif; ?>
-					<?php if($content): ?>
-						<div><?php echo $content; ?></div>
-					<?php endif; ?>
-				<?php endwhile; ?>
-			</div>
-		<?php endif; ?>
-
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">

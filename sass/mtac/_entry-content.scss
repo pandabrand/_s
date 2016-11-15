@@ -1,0 +1,18 @@
+.entry-content-with-sidebar {
+	@include span(9 of 12);
+}
+
+.entry-content-sidebar {
+	@include span(3 of 12 last);
+	padding-right: span(.5 of 12);
+	margin-top: 1.5em;
+}
+
+@media(max-width: 768px) {
+	.entry-content-with-sidebar {
+		@include full;
+	}
+	.entry-content-sidebar {
+		@include full;
+	}
+}

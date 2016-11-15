@@ -5,14 +5,19 @@
  * navigation support for dropdown menus.
  */
 ( function() {
-	var container, button, menu, links, subMenus, i, len;
+	var container, button_container, button, menu, links, subMenus, i, len;
 
 	container = document.getElementById( 'site-navigation' );
 	if ( ! container ) {
 		return;
 	}
 
-	button = container.getElementsByTagName( 'button' )[0];
+	button_container = document.getElementById( 'site-nav-button-id' );
+	if( ! button_container ) {
+		return;
+	}
+
+	button = button_container.getElementsByTagName( 'button' )[0];
 	if ( 'undefined' === typeof button ) {
 		return;
 	}

@@ -1,0 +1,8 @@
+{
+  "name": "mtac-bower",
+  "version": "0.0.1",
+  "dependencies": {
+    "slideout": "latest"
+  },
+  "private": true
+}

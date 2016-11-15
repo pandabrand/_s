@@ -1,0 +1,11 @@
+.full-width-image-header {
+    display: flex;
+    flex-direction: column;
+    max-height: 400px;
+    justify-content:flex-end;
+    overflow: hidden;
+}
+
+.full-width-image-header img {
+    display: block;
+}

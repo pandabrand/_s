@@ -1,0 +1,59 @@
+$border__color: $dark-magenta;
+$hover__color: $light-magenta;
+
+.library-container {
+  padding: 0 5px 10px;
+  border: $border__color solid 1px;
+  border-radius: 3px;
+  margin: 5px 10px 0 0;
+  .library-header {
+    h2 {
+      margin: 0 0 .5em 0;
+      color: $border__color;
+    }
+    .mtac-library-title {
+      color: $border__color;
+      font-size: .75em;
+      font-weight: 500;
+      margin: 1.25em 0 0 .25em;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    .ui-accordion-header {
+      font-size: .75em;
+      word-break: keep-all;
+    }
+    .ui-accordion-header-collapsed {
+      .ui-icon {
+        background-image: url('/wp-content/themes/mtac/css/images/ui-icons_ffffff_256x240.png');
+      }
+    }
+    .ui-state-default {
+      background-color: $hover__color;
+      color: $whitish;
+    }
+    .ui-state-hover {
+      background-color: $hover__color;
+      color: $main-green;
+    }
+    .ui-state-active {
+      background-color: $border__color;
+    }
+    .tool-link {
+      font-size: .75em;
+    }
+    .tool-description {
+      p {
+        margin: 0 0 .5em 0;
+        font-size: .75em;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .library-container {
+    margin: 2em;
+  }
+}
