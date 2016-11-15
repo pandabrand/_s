@@ -12,14 +12,15 @@ $susy: (
 );
 
 .site {
+  background-color: $color__background-site;
   @include container();
   @include susy-breakpoint(20em, 6) {
     @include container(6);
   }
   @include susy-breakpoint(48em, 9) {
-    @include container(9);
+    @include container(40em);
   }
   @include susy-breakpoint(64em, 12) {
-    @include container(12);
+    @include container(60em);
   }
 }

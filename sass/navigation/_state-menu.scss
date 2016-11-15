@@ -1,0 +1,83 @@
+@include susy-breakpoint(20em, 6) {
+  .front-page-header {
+	overflow: hidden;
+	.img-header {
+	  @include full;
+	}
+  }
+  .state-container {
+    @include full;
+    margin-left: span(.5 of 6);
+    overflow: hidden;
+	ul.state-menu {
+	  list-style: none;
+	  margin: 0;
+	  margin-top: gutter(6);
+	  padding: 0;
+	  overflow: hidden;
+	  li {
+		@include gallery(3 of 6);
+		margin-bottom: gutter(6);
+		a {
+		  text-decoration: none;
+		  font-weight: 700;
+		}
+	  }
+	}
+  }
+}
+
+@include susy-breakpoint(48em, 9) {
+  .front-page-header {
+	overflow: hidden;
+	.img-header {
+	  @include span(5 of 9);
+	}
+  }
+  .state-container {
+    @include span(4 last);
+    clear: none;
+    margin-left: 0;
+    overflow: hidden;
+    h4 {
+      margin: 0 0 .5em;
+    }
+	ul.state-menu {
+	  list-style: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  li {
+		@include gallery(2 of 4);
+		margin-bottom: gutter(6);
+		a {
+		  text-decoration: none;
+		  font-weight: 700;
+		}
+	  }
+	}
+  }
+}
+
+@include susy-breakpoint(64em, 12) {
+  .front-page-header {
+	overflow: hidden;
+	.img-header {
+	  @include span(8 of 12);
+	}
+  }
+  .state-container {
+    @include span(4 last);
+    overflow: hidden;
+	ul.state-menu {
+	  li {
+		@include gallery(2 of 4);
+		margin-bottom: gutter(6);
+		a {
+		  text-decoration: none;
+		  font-weight: 700;
+		}
+	  }
+	}
+  }
+}

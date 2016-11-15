@@ -20,10 +20,14 @@
 </head>
 
 <body <?php body_class(); ?>>
+<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'mobile-menu', 'container_id' => 'mobile-menu-container' ) ); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', '_pandapress' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
+	  <div class="header-logo">
+	    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="MTAC logo" /></a>
+	  </div>
 		<div class="site-branding">
 			<!--
 			<div class="site-logo">
@@ -34,7 +38,6 @@
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fa fa-bars"></i></button>
 			</div>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-
 			<?php
 			$description = get_bloginfo( 'description', 'display' );
 			if ( $description || is_customize_preview() ) : ?>

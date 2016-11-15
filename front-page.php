@@ -13,7 +13,6 @@
  */
 
 get_header(); ?>
-
 	<div id="primary" class="content-area-front">
 		<main id="main" class="site-main-front" role="main">
 			<?php
