@@ -11,14 +11,14 @@
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
-		text-align: center;
-		background-color: $color__background-hr;
+		text-align: left;
+		background-color: $color__background__menu;
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
 			position: absolute;
-			top: 1.5em;
+			top: 2em;
 			left: -999em;
 			z-index: 99999;
 
@@ -28,6 +28,7 @@
 			}
 
 			li {
+				display: block;
 				&:hover > ul,
 				&.focus > ul {
 					left: 100%;
@@ -35,7 +36,8 @@
 			}
 
 			a {
-				width: 200px;
+				// width: 200px;
+				white-space: nowrap;
 			}
 
 			:hover > a,
@@ -73,7 +75,7 @@
 		text-decoration: none;
 		height: 40px;
 		line-height: 40px;
-		font-size: .6em;
+		font-size: .8em;
 		text-transform: uppercase;
 		font-weight: 700;
 		padding: 0 15px;

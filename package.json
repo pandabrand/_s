@@ -5,9 +5,10 @@
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-autoprefixer": "~3.0.3",
+    "grunt-bowercopy": "latest",
     "grunt-browser-sync": "~2.2.0",
+    "grunt-contrib-compress": "latest",
     "grunt-contrib-cssmin": "~1.0.2",
-    "vinyl-fs": "2.4.3",
     "grunt-contrib-imagemin": "1.0.1",
     "grunt-contrib-jshint": "~1.0.0",
     "grunt-contrib-sass": "~1.0.0",
@@ -17,8 +18,7 @@
     "grunt-npm-install": "^0.3.0",
     "grunt-rsync": "~2.0.0",
     "grunt-spritesmith": "^6.3.1",
-    "grunt-bowercopy": "latest",
-    "grunt-contrib-compress": "latest",
-    "load-grunt-tasks": "~3.5.2"
+    "load-grunt-tasks": "~3.5.2",
+    "vinyl-fs": "2.4.3"
   }
 }

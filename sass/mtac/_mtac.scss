@@ -24,12 +24,13 @@
         @include gallery(3 of 6);
         margin-bottom: gutter(6);
         article {
-          min-height: 420px;
+          min-height: 450px;
           .fpw-page-title {
             font-size: 1.25em;
           }
           .fpw-excerpt {
             font-size: .95em;
+            padding: 10px;
           }
         }
       }
@@ -73,7 +74,7 @@
 
   .main-navigation {
     width: 100%;
-    background-color: $main-green;
+    background-color: $color__background__menu;
     color: $whitish;
     .menu-primary-menu-container {
       float: left;
@@ -99,7 +100,7 @@
           }
         }
         ul {
-          background-color: $main-green;
+          background-color: $color__background__menu;
         }
       }
     }
@@ -135,13 +136,15 @@
 @media (min-width: 769px) and (max-width: 1024px) {
   .site-logo {
     @include span(3 of 9);
+    margin-top: 1%;
+    margin-bottom: 1%;
   }
   .site-title {
-    @include span(full);
-    font-size: 2em;
+    @include span(6 of 9 last);
+    font-size: 1.25em;
     clear: none;
     margin: 0;
-    padding: span(.5 of 9) span(1 of 9);
+    padding: span(.25 of 9) span(.25 of 9);
   }
 
   .site-nav-button {
@@ -149,14 +152,17 @@
   }
 
   .main-navigation {
-    background-color: $main-green;
+    background-color: $color__background__menu;
     color: $whitish;
+    margin: 0 !important;
+    height: 40px !important;
     .menu-primary-menu-container {
       ul#primary-menu {
         float: left;
         .menu-item {
-          padding: 2px 10px;
+          padding: 0px 10px;
           margin: .5em 0;
+          line-height: 40px;
           a {
             color: $whitish;
             font-family: $work-sans;
@@ -171,6 +177,7 @@
         }
         ul {
           background-color: $main-green;
+          white-space: nowrap;
         }
       }
     }
@@ -183,9 +190,9 @@
       line-height: 1em !important;
     }
     .btn-mtac-search {
-      font-size: .6em !important;
-      line-height: .55em !important;
-      top: 2% !important;
+      font-size: .65em !important;
+      line-height: .65em !important;
+      top: 4px !important;
       right: -25px !important
     }
   }
@@ -197,12 +204,14 @@
         @include gallery(3 of 9);
         margin-bottom: gutter(9);
         article {
-          min-height: 340px;
+          min-height: 450px;
           .fpw-page-title {
-            font-size: 1em;
+            font-size: 1.25em;
+            font-weight: 700;
           }
           .fpw-excerpt {
             font-size: .75em;
+            padding: 10px;
           }
         }
       }
@@ -210,14 +219,15 @@
   }
   .site-footer {
     margin-top: 2em;
-    .footer-logo {
-      @include span(2 of 9);
-    }
+    // .footer-logo {
+    //   @include span(2 of 9);
+    // }
     .footer-info {
-      @include span(5 of 12);
+      @include span(6 of 9);
+      padding-left: span(.5 of 9);
     }
     .footer-links {
-      @include span(2 of 9 last);
+      @include span(3 of 9 last);
     }
   }
   .mtac-article {
@@ -228,12 +238,15 @@
 @media (min-width: 1024px) {
   .site-logo {
     @include span(3 of 12);
+    margin-top: 1%;
+    margin-bottom: 1%;
   }
   .site-title {
-    @include span(full);
+    @include span(9 of 12 last);
+    font-size: 1.25em;
     clear: none;
     margin: 0;
-    padding: span(.5 of 12) span(1 of 12);
+    padding: span(.25 of 12) span(.25 of 12);
   }
 
   .site-nav-button {
@@ -241,14 +254,17 @@
   }
 
   .main-navigation {
-    background-color: $main-green;
+    background-color: $color__background__menu;
     color: $whitish;
+    margin: 0 !important;
+    height: 40px !important;
     .menu-primary-menu-container {
       ul#primary-menu {
         float: left;
         .menu-item {
-          padding: 2px 10px;
-          margin: .5em 0;
+          padding: 0px 10px;
+          margin: 0;
+          line-height: 40px;
           a {
             color: $whitish;
             font-family: $work-sans;
@@ -261,7 +277,8 @@
           }
         }
         ul {
-          background-color: $main-green;
+          background-color: $color__background__menu;
+          white-space: nowrap;
         }
       }
     }
@@ -274,12 +291,14 @@
         @include gallery(3 of 12);
         margin-bottom: gutter(12);
         article {
-          min-height: 340px;
+          min-height: 450px;
           .fpw-page-title {
-            font-size: 1em;
+            font-size: 1.25em;
+            font-weight: 700;
           }
           .fpw-excerpt {
             font-size: .75em;
+            padding: 10px;
           }
         }
       }
@@ -287,14 +306,15 @@
   }
   .site-footer {
     margin-top: 2em;
-    .footer-logo {
-      @include span(3 of 12);
-    }
+    // .footer-logo {
+    //   @include span(3 of 12);
+    // }
     .footer-info {
-      @include span(6 of 12);
+      @include span(8 of 12);
+      padding-left: span(.5 of 12);
     }
     .footer-links {
-      @include span(3 of 12 last);
+      @include span(4 of 12 last);
     }
   }
   .mtac-article {
@@ -307,16 +327,17 @@
   text-transform: uppercase;
   font-family: $font__header;
   font-weight: 700;
+  color: $color__title_menu;
   a {
-    color: $light-green;
+    color: $color__title_menu;
     &:visited {
-      color: $light-green;
+      color: $color__title_menu;
     }
   }
 }
 
 .site-branding {
-  background-color: $dark-green;
+  background-color: $color__branding-background;
   padding: .5em .5em 0;
   @include full;
 }
@@ -330,25 +351,28 @@
   @include clearfix;
 }
 
-.mtac-search {
-  float: right;
-  margin: .5em 3%;
-  position: relative;
-  line-height: 1.5;
-  .mtac-search-input {
-    font-size: .65em;
-    line-height: 1.25em;
-    border-radius: 3px 0 0 3px;
-  }
-  .btn-mtac-search {
-    font-size: .65em;
-    line-height: .65em;
-    background-color: $whitish;
-    padding: .5em 1em .5em;
-    position: absolute;
-    top: 10%;
-    right: -30px;
-    border-radius: 0 3px 3px 0;
+.mtac-search-wrapper {
+  clear: both;
+  .mtac-search {
+    float: left;
+    // margin: .5em 3%;
+    position: relative;
+    line-height: 1.5;
+    .mtac-search-input {
+      font-size: .65em;
+      line-height: 1.25em;
+      border-radius: 3px 0 0 3px;
+    }
+    .btn-mtac-search {
+      font-size: .65em;
+      line-height: .65em;
+      background-color: $whitish;
+      padding: .45em 1em .45em;
+      position  : absolute;
+      top: 4px;
+      right: -30px;
+      border-radius: 0 3px 3px 0;
+    }
   }
 }
 
@@ -367,15 +391,21 @@
     }
     .front-page-bar {
       @include full;
-      background-color: $main-green;
-      padding: 10px;
+      background-color: $color__background__menu;
+      padding: 1.5em 1em 0;
       .front-page-bar-text {
         color: $whitish;
         font-family: $work-sans;
-        font-size: 85%;
+        font-size: 1em;
         text-align: center;
         p {
           color: $whitish !important;
+        }
+        a {
+          color: $whitish !important;
+          &:visited {
+            color: $whitish !important;
+          }
         }
       }
     }
@@ -390,8 +420,8 @@
       article {
         width: 100%;
         overflow: hidden;
-        border: 1px solid $dark-green;
-        background-color: $dark-green;
+        border: 1px solid $color__background__menu;
+        background-color: $color__background__menu;
         color: $whitish;
         text-align: center;
         a {
@@ -409,7 +439,7 @@
 }
 
 .site-footer {
-  background-color: $main-green;
+  background-color: $color__footer-background;
   @include full;
   padding: .5em 0 0 .5em;
   margin-top: 2em;
@@ -423,6 +453,12 @@
     color: $whitish;
     font-size: .75em;
     .footer-item {
+      a {
+        color: $whitish;
+        &:visited {
+          color: $whitish;
+        }
+      }
       margin: 10px 0;
       &:first-child {
         margin: 0 0 10px 0;
@@ -510,18 +546,45 @@
   }
 }
 
+.entry-title {
+  color: $color__title_menu;
+}
+
 .site-main-mtac>article>header>.entry-title {
   margin-top: 1.5em;
 }
 
 #primary-menu {
   li.fa-home {
-    padding: 6px 0px 2px 10px !important;
+    padding: 0 !important;
+    line-height: 37px !important;
+    font-family: FontAwesome !important;
+    margin-left: 25px !important;
     a {
       display: inline-block !important;
       position: relative;
       width: 1em;
       left: -1em;
+      &:before {
+        font-family: FontAwesome;
+        content: "\f015" !important;
+      }
     }
   }
+}
+
+.ui-widget-content {
+  a {
+    color: $color__link !important;
+    &:visited {
+      color: $color__link !important;
+    }
+    &:active, &:hover {
+      color: $color__link-hover !important;
+    }
+  }
+}
+
+article.post {
+  padding-left: 2em;
 }

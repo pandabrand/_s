@@ -81,6 +81,8 @@ module.exports = function(grunt) {
         {src: ['template-parts/**']},
         {src: ['languages/**']},
         {src: ['js/**']},
+        {src: ['css/**']},
+        {src: ['fpw2_views/**']},
         {src: ['woocommerce/**']},
       ]
     }
@@ -99,7 +101,7 @@ module.exports = function(grunt) {
 	    tasks: ['uglify']
 	  },
     compress: {
-      files: ['assets/css/style.css','assets/js/app.min.js','assets/img/*.{png,jpg,gif}'],
+      files: ['assets/css/style.css','assets/js/app.min.js','assets/img/*.{png,jpg,gif}','css/**','img/*.{png,jpg,gif}','fpw2_views/*.php'],
       tasks: ['compress']
     },
 	}
@@ -113,5 +115,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-bowercopy');
   grunt.loadNpmTasks('grunt-spritesmith');
   grunt.loadNpmTasks('grunt-contrib-compress');
-  grunt.registerTask('default', ['sass', 'imagemin', 'uglify','compress']);
+  grunt.registerTask('default', ['sass', 'imagemin', 'bowercopy', 'uglify', 'compress']);
 };

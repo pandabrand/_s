@@ -8,9 +8,16 @@ $whitish: #ECEEF0;
 $black: #000000;
 $blackish: #0B120B;
 
+$pink: #ee4799;
+$dark-pink: #ea187f;
+$yellow: #fff200;
+$light-yellow: #fff533;
+$grey: #bcbdc1;
+
 $color__background-body: #fff;
+$color__background-site: #f6f2f2;
 $color__background-screen: #f1f1f1;
-$color__background-hr: #515151;
+$color__background-hr: $main-green;
 $color__background-button: #e6e6e6;
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
@@ -18,10 +25,10 @@ $color__background-ins: #fff9c0;
 $color__text-screen: #21759b;
 $color__text-input: #666;
 $color__text-input-focus: #111;
-$color__link: $dark-green;
-$color__link-visited: $dark-green;
+$color__link: $dark-pink;
+$color__link-visited: $dark-pink;
 $color__link-hover: $dark-magenta;
-$color__text-main: $main-green;
+$color__text-main: $grey;
 
 $color__border-button: #ccc #ccc #bbb;
 $color__border-button-hover: #ccc #bbb #aaa;
@@ -29,8 +36,12 @@ $color__border-button-focus: #aaa #bbb #bbb;
 $color__border-input: #ccc;
 $color__border-abbr: #666;
 
-
 $color__link_pink: #ee4799;
 $color__link_pink-hover: #a22060;
 $color__link_blue: #0066cc;
 $color__link_blue-hover: #0d4680;
+
+$color__branding-background: $whitish;
+$color__footer-background: $pink;
+$color__background__menu: $dark-pink;
+$color__title_menu: $pink;

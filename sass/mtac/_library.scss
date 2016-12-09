@@ -1,5 +1,10 @@
-$border__color: $dark-magenta;
-$hover__color: $light-magenta;
+$border__color: #0066cc;
+$hover__color: #408cd9;
+
+.sub-page-home {
+  margin: 1.47em 0;
+  font-weight: 700;
+}
 
 .library-container {
   padding: 0 5px 10px;
@@ -11,6 +16,7 @@ $hover__color: $light-magenta;
       margin: 0 0 .5em 0;
       color: $border__color;
     }
+
     .mtac-library-title {
       color: $border__color;
       font-size: .75em;
@@ -35,7 +41,7 @@ $hover__color: $light-magenta;
     }
     .ui-state-hover {
       background-color: $hover__color;
-      color: $main-green;
+      color: $yellow;
     }
     .ui-state-active {
       background-color: $border__color;

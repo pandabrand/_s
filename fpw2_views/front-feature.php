@@ -15,7 +15,9 @@
 	</a>
 
 	<div class="fpw-excerpt">
-		<?php the_excerpt(); ?>
+		<a href="<?php the_permalink(); ?>" class="fpw-featured-link">
+			<?php the_excerpt(); ?>
+		</a>
 	</div>
 
 </article>

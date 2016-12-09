@@ -11,14 +11,15 @@ jQuery(document).ready(function($) {
     activeHeader: "ui-icon-circle-arrow-s"
   };
   $( "#accordion" ).accordion({
-    icons: icons,
+    icons: null,
     heightStyle: "content",
   });
 
   $('[id^=accordion-]').each(function(index){
     $(this).accordion({
-      icons: icons,
+      icons: null,
       heightStyle: "content",
+      collapsible: true
     });
   });
 }(jQuery));
