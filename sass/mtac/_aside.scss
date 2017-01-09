@@ -1,3 +1,12 @@
+aside {
+  .return-link-title {
+    margin-top: 1em;
+  }
+  .tool-link {
+    margin: .75em 1.5em 1em;
+  }
+}
+
 .aside-menu {
   margin: 2em 0;
   list-style: none;
@@ -6,14 +15,14 @@
   font-weight: 400;
   .current_page_item {
     background-color: $yellow;
-    color: $grey;
+    color: $pink;
     padding: 5px;
     border-radius: 2px;
     font-weight: 700;
     a {
-      color: $grey;
+      color: $pink;
       &:visited {
-        color: $grey;
+        color: $pink;
       }
     }
   }

@@ -20,7 +20,7 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content<?php echo (have_rows('libraries') ? ' entry-content-with-sidebar' : '' ); ?>">
+	<div class="entry-content<?php echo (have_rows('libraries') ) ? ' entry-content-with-sidebar' : '' ; ?>">
 		<?php
 			the_content();
 
@@ -47,8 +47,9 @@
 		<?php endif; ?>
 	</div><!-- .entry-content -->
 
-	<?php if (have_rows('libraries')): ?>
+	<?php if (have_rows('libraries') || get_field('page_to_return')): ?>
 		<div class="entry-content-sidebar">
+			<?php get_template_part('template-parts/mtac', 'page_return_link'); ?>
 			<?php get_template_part('template-parts/mtac', 'libraries'); ?>
 		</div>
 	<?php endif; ?>

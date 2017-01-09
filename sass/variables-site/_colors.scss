@@ -1,4 +1,4 @@
-$main-green: #7FB27F;
+$main-green: #68bc2b;
 $light-green: #AFCFAF;
 $dark-green: #568f56;
 $light-magenta: #754775;
@@ -10,9 +10,11 @@ $blackish: #0B120B;
 
 $pink: #ee4799;
 $dark-pink: #ea187f;
-$yellow: #fff200;
+$yellow: #fffbb1;
 $light-yellow: #fff533;
-$grey: #bcbdc1;
+$grey: #f8f8f9;
+$blue: #0066cc;
+$light-blue: #e6f0fa;
 
 $color__background-body: #fff;
 $color__background-site: #f6f2f2;
@@ -28,7 +30,7 @@ $color__text-input-focus: #111;
 $color__link: $dark-pink;
 $color__link-visited: $dark-pink;
 $color__link-hover: $dark-magenta;
-$color__text-main: $grey;
+$color__text-main: $blackish;
 
 $color__border-button: #ccc #ccc #bbb;
 $color__border-button-hover: #ccc #bbb #aaa;
@@ -42,6 +44,10 @@ $color__link_blue: #0066cc;
 $color__link_blue-hover: #0d4680;
 
 $color__branding-background: $whitish;
-$color__footer-background: $pink;
-$color__background__menu: $dark-pink;
-$color__title_menu: $pink;
+$color__footer-background: $light-blue;
+$color__background__menu: $blue;
+$color__title_menu: $main-green;
+
+$color__widget-background: $yellow;
+$color__widget-title: $pink;
+$color__widget-body: $black;

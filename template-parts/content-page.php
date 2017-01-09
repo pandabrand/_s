@@ -57,3 +57,13 @@
 		</footer><!-- .entry-footer -->
 	<?php endif; ?>
 </article><!-- #post-## -->
+<?php if( post_password_required($post)): ?>
+	<div class="request-form">
+		<h4>Fill out the form below to recieve the password for answer keys.</h4>
+		<?php
+		if ( function_exists( 'ninja_forms_display_form' ) ) {
+		  ninja_forms_display_form( 2 );
+		}
+		?>
+	</div>
+<?php endif; ?>

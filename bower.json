@@ -2,7 +2,9 @@
   "name": "mtac-bower",
   "version": "0.0.1",
   "dependencies": {
-    "slideout": "latest"
+    "slideout": "latest",
+    "susy": "~2.2.12",
+    "slideout.js": "~1.0.1"
   },
   "private": true
 }

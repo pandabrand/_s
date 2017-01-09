@@ -36,15 +36,15 @@ $hover__color: #408cd9;
       }
     }
     .ui-state-default {
-      background-color: $hover__color;
-      color: $whitish;
+      background-color: $hover__color !important;
+      color: $whitish !important;
     }
     .ui-state-hover {
-      background-color: $hover__color;
-      color: $yellow;
+      background-color: $hover__color !important;
+      color: $yellow !important;
     }
     .ui-state-active {
-      background-color: $border__color;
+      background-color: $border__color !important;
     }
     .tool-link {
       font-size: .75em;

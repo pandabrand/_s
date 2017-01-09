@@ -27,7 +27,7 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
 			<div class="site-logo">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/CWIT-logo-color.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/CWIT-logo-color.png 1x, <?php echo get_template_directory_uri(); ?>/assets/img/CWIT-logo-color@2x.png 2x"/>
+				<a href="http://chicagowomenintrades2.org/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/CWIT-logo-color.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/CWIT-logo-color.png 1x, <?php echo get_template_directory_uri(); ?>/assets/img/CWIT-logo-color@2x.png 2x"/></a>
 			</div>
 			<div id="site-nav-button-id" class="site-nav-button">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fa fa-bars"></i></button>

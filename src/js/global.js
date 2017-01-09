@@ -19,7 +19,6 @@ jQuery(document).ready(function($) {
     $(this).accordion({
       icons: null,
       heightStyle: "content",
-      collapsible: true
     });
   });
 }(jQuery));

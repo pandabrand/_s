@@ -3,3 +3,5 @@ node_modules/**
 .sass-cache/**
 assets/*/**
 .DS_Store
+.bashrc
+release/**
