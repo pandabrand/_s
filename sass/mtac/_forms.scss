@@ -1,0 +1,13 @@
+.nf-field-element {
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    li {
+      margin: 0 10px 5px 0 !important;
+      input {
+        margin-right: 0 !important;
+      }
+    }
+  }
+}
